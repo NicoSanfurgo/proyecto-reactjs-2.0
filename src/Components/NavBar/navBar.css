@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    background-color:rgb(133, 8, 8);
+    min-height: 70px;
+}
+.carrito{
+    width: 55px;
+    margin-right: 15px;
+}
+.navbar__menu{
+    margin: 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}

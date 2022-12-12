@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 
 const Remeras = () =>{
     return(
-        <h1>Bienvenido a nuestra página</h1>
+        <h1>Estas son algunas de nuestras remeras</h1>
     )
 }
 

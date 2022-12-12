@@ -1,6 +1,13 @@
+import Cards from '../Cards'
+
+
 const Home = () =>{
     return(
-        <h1>Bienvenido a nuestra página</h1>
+        <div>
+            <h1>Bienvenido</h1>
+            {<Cards />}
+
+        </div>
     )
 }
 
