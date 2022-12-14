@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Cards.css'
 
 function Card({title, imageSource, detalle, compra}) {
@@ -7,12 +8,10 @@ function Card({title, imageSource, detalle, compra}) {
         <img src={imageSource} alt=''></img>
         <div className='card-body text text-light'>
           <h4 className='card-title'> {title} </h4>
-
           <p className='card-text'> {detalle} </p>
-
-          <a href={compra} className='btn btn-outline-primary rounded-0'>
-            Comprar
-          </a>
+          <Link href={compra} className='btn btn-outline-primary rounded-0'>
+            Detalle
+          </Link>
         </div>
       </div>
     )

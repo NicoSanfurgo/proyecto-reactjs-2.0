@@ -6,6 +6,7 @@ import remera3 from './Img/Remeras/gow1.webp'
 import figura1 from './Img/Figuras/Baldur1.jpg'
 import figura2 from './Img/Figuras/CaballeroFaraam1.webp'
 import figura3 from './Img/Figuras/Sekiro1.webp'
+import { Link } from 'react-router-dom'
 
 const cards = [
     {
@@ -13,42 +14,36 @@ const cards = [
         title: 'Remera Dark Souls',
         image: remera1,
         detalle:'Remera con diseño "Dark Souls". Talle: S. Diseño de la tela: Liso',
-        compra:''
     },
     {
         id:2,
         title: 'Remera Doom',
         image: remera2,
         detalle:'Remera con diseño "DOOM". Talle: L. Diseño de la tela: Liso',
-        compra:''
     },
     {
         id:3,
         title: 'Remera Gow',
         image: remera3,
         detalle:'Remera con diseño "God Of War". Talle: S. Diseño de la tela: Liso',
-        compra:''
     },
     {
         id:4,
         title: 'Figura Baldur',
         image: figura1,
-        detalle:'',
-        compra:''
+        detalle:'Figura de Baldur God Of War',
     },
     {
         id:5,
         title: 'Figura Caballero Faraam',
         image: figura2,
-        detalle:'',
-        compra:''
+        detalle:'Figura de Caballero Faraam de Dark Souls',
     },
     {
         id:6,
         title: 'Figura Sekiro',
         image: figura3,
-        detalle:'',
-        compra:''
+        detalle:'Figura de Sekiro',
     },
     
 ]
@@ -61,7 +56,7 @@ function Cards() {
             {
                 cards.map((card) => (
                     <div className='col-md-4' key={card.id}>
-                        <Card title={card.title} imageSource={card.image} compra={card.compra} detalle={card.detalle} /> 
+                         <Card title={card.title} imageSource={card.image} detalle={card.detalle} /> 
                     </div>
                 ))
             }

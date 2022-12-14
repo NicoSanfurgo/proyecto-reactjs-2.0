@@ -4,17 +4,16 @@ import './navBar.css'
 import { Link } from 'react-router-dom';
 
 
-const NavBar = ({menus}) => {
+const NavBar = ({menus}) =>{
     return(
-        <div className='navbar'>
-            <a className='navbar__menu' href='/'>Inicio</a>
-            <a className='navbar__menu' href='/productos'>Productos</a>
-            <a className='navbar__menu' href='/remeras'>Remeras</a>
-            <a className='navbar__menu' href='/figuras'>Figuras</a>
-            <a className='navbar__menu' href='/soporte'>Soporte</a>
-            <div className='carrito'><CartWidget /></div>
-        </div>
-    )
+    <div className='navbar'>
+        {
+            menus.map((menu)=>{
+                return <Link className='navbar__menu' to={menu.href} >{menu.name}</Link>
+            })
+        }
+        <div className='carrito'><CartWidget /></div>
+    </div>)
 }
 
 
