@@ -11,7 +11,7 @@ const Productos = () =>{
         {
             id:'1',
             nombre:'Remera Diseño Dark Souls',
-            image:remera1,
+            image: remera1,
             informacion: 'Talle: L. Diseño de la tela: Liso'
         },
         {
@@ -22,7 +22,7 @@ const Productos = () =>{
         {
             id:'3',
             nombre:'Remera Diseño DOOM',
-            image:remera2,
+            image: remera2,
             informacion:'Talle: S. Diseño de la tela: Liso'
         },
         {
@@ -33,7 +33,7 @@ const Productos = () =>{
         {
             id:'5',
             nombre:'Remera Diseño GoW',
-            image:remera3,
+            image: remera3,
             informacion:'Talle: L. Diseño de la tela: Liso'
         },
         {
